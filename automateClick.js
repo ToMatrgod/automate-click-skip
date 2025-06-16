@@ -16,7 +16,6 @@
 
         setTimeout(() => {
             skipBtn.click();
-            console.log("click")
             lastSkipTime = Date.now();
         }, delay);
     }
@@ -30,17 +29,14 @@
 
         if (adShowing && video && !skipBtn && !video.muted) {
             video.muted = true;
-            console.log('mute ad');
 
             setTimeout(() => {
                 video.muted = false;
-                console.log('cancel mute');
             }, 5000);
         }
     }
 
     setInterval(() => {
-        console.log("doing")
         clickSkipWithRandomDelay();
         muteUnskippableAd();
     }, 1000);
