@@ -1,13 +1,3 @@
-// ==UserScript==
-// @name         YouTube Auto Skip Ads Free with Delay & Mute
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  自动跳过可跳过广告（随机延迟点击），静音不可跳过广告前几秒
-// @author       YourName
-// @match        https://www.youtube.com/*
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict';
 
